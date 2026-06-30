@@ -35,7 +35,7 @@ class BitString:
     _bitlength: int
 
     def __init__(self,
-                 bitstring: builtins.bytes | None = None) -> None:
+                 bitstring: builtins.bytes | str | None = None) -> None:
         if not bitstring:
             self._bytes = bytes()
             self._bitlength = 0
